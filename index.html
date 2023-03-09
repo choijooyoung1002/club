@@ -1,1 +1,110 @@
-저는 초등학생 때부터 컴퓨터에 대한 관심이 많았습니다. 이러한 분야에서 스스로 도전해보고 성장하고 싶어서 지난해에도 이와 관련된 동아리에 지원하고자 했습니다. 하지만 그 당시에는 지원할 기회가 없었습니다. 이번에는 고등학교에서 소프트아이스크림 동아리를 지원하여, 제가 가진 열정과 노력을 한층 더 키울 수 있는 기회로 삼겠습니다. 항상 새로운 것에 도전하고 발전하는 것을 좋아하는 저에게 이 동아리는 매우 의미 있는 경험이 될 것입니다.
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10227 지원동기</title>
+    <script>
+      const introduce = () => {
+        document.querySelector("#container").style.display = "none";
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      id="container"
+      data-tilt
+      data-tilt-glare
+      data-tilt-max-glare=".5"
+      data-tilt-scale="1.1"
+      onclick="introduce()"
+    >
+      <div id="inner">
+        <h1>지원동기</h1>
+        <h3>아무곳이나 클릭해주세요.</h3>
+      </div>
+    </div>
+
+    <div id="introduce">
+      <div>
+        <p>
+          저는 예전부터 AI/SW에 대한 관심이 많았습니다. <br />이 동아리를
+          지원하면 이 분야에 관심이 많고 새롭게 도전하고 발전하는 것을 원하는
+          저에게 의미 있는 경험이 될 것이라 생각해 지원하였습니다.
+        </p>
+      </div>
+      <button onclick="alert('저를 뽑아주세요!')">다 읽었어요 ✔</button>
+    </div>
+
+    <script src="vanilla-tilt.min.js"></script>
+  </body>
+  <style>
+    @font-face {
+      font-family: "nanum";
+      src: url("NanumSquareNeo-Variable.woff2");
+    }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      background-color: #7b9acc;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: "nanum", sans-serif;
+    }
+
+    h1 {
+      font-size: 70px;
+      font-weight: 900;
+      color: #fcf6f5;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      color: #fcf6f5;
+    }
+    #container {
+      perspective: 30px;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #introduce {
+      perspective: 30px;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #inner {
+      text-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 400;
+      color: #fcf6f5;
+      text-align: center;
+    }
+
+    button {
+      all: unset;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid white;
+      color: white;
+      background: #6882ad;
+      margin: 10px;
+    }
+  </style>
+</html>
